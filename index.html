@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Style with Nastya</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Art Style Guessing Game</h1>
+    <p>Look at the painting, type its art style in, and click Check or press Enter!</p>
+  </header>
+
+  <div class="container" id="gameContainer">
+    <!-- Image display -->
+    <img id="painting" src="images/img1.jpg" alt="Artwork" class="painting"/>
+
+    <!-- Input and button -->
+    <div class="guess-section">
+      <input type="text" id="userGuess" placeholder="Enter art style..." autocomplete="off">
+      <button id="submitGuess">Check</button>
+    </div>
+
+    <!-- Result display -->
+    <div id="result"></div>
+    <p id="fact"></p>
+
+    <!-- Navigation for next image -->
+    <button id="nextImage" style="display:none;">Next Painting</button>
+    <button id="playAgain" style="display:none;">Play Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
